@@ -55,7 +55,6 @@ void AWinters_HowlCharacter::Tick(float DeltaSeconds)
 
 	if (CursorToWorld != nullptr)
 	{
-		
 	    if (APlayerController* PC = Cast<APlayerController>(GetController()))
 		{
 			FHitResult TraceHitResult;
