@@ -14,7 +14,7 @@ class WINTERS_HOWL_API AEagle : public APawn
 public:
 	// Sets default values for this pawn's properties
 	AEagle();
-
+	//bool ISee
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -27,5 +27,7 @@ public:
 private:
 	UPROPERTY(VisibleAnywhere)
 	class USkeletalMeshComponent* MeshComponent;
+	
+	float MoveSpeed;
 	
 };

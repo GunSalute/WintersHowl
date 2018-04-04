@@ -24,5 +24,7 @@ public:
 private:
 	UPROPERTY(VisibleAnywhere)
 	class UStaticMeshComponent* MeshComponent;
+	//float TimeSeen;
+	
 
 };

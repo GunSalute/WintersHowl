@@ -17,7 +17,7 @@ AEagle::AEagle()
 void AEagle::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	MoveSpeed = 5;
 }
 
 // Called every frame

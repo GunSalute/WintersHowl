@@ -11,6 +11,8 @@ ASheep::ASheep()
 
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>("Mesh Component");
 	RootComponent = MeshComponent;
+
+	float TimeSeen = DeltaTime;
 }
 
 // Called when the game starts or when spawned
@@ -25,5 +27,15 @@ void ASheep::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	//if (ISee Sheep)
+	//{
+		//TimeSeen += DeltaTime;
+		//if (TimeSeen >= 2)
+		//{
+			//MoveToActor/Attack
+		//}
+
+		//else TimeSeen = 0;
+	}
 }
 
