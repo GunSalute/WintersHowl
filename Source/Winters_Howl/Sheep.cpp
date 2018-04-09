@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Sheep.h"
-#include "Components/StaticMeshComponent.h"
+#include "Components/SkeletalMeshComponent.h"
 
 // Sets default values
 ASheep::ASheep()
@@ -9,10 +9,10 @@ ASheep::ASheep()
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>("Mesh Component");
+	MeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>("Mesh Component");
 	RootComponent = MeshComponent;
 
-	float TimeSeen = DeltaTime;
+	//float TimeSeen = DeltaTime;
 }
 
 // Called when the game starts or when spawned
@@ -36,6 +36,5 @@ void ASheep::Tick(float DeltaTime)
 		//}
 
 		//else TimeSeen = 0;
-	}
 }
 

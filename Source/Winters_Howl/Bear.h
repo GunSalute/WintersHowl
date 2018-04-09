@@ -4,27 +4,28 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
-#include "Sheep.generated.h"
+#include "Bear.generated.h"
 
 UCLASS()
-class WINTERS_HOWL_API ASheep : public APawn
+class WINTERS_HOWL_API ABear : public APawn
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this pawn's properties
-	ASheep();
+	ABear();
 
+protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-private:
-	UPROPERTY(VisibleAnywhere)
-	class USkeletalMeshComponent* MeshComponent;
-	//float TimeSeen;
-	
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	
+	
 };
